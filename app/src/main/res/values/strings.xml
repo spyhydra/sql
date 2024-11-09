@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Conference Registration</string>
+    <string-array name="conference_topics">
+        <item>Artificial Intelligence</item>
+        <item>Data Science</item>
+        <item>Cloud Computing</item>
+        <item>Machine Learning</item>
+    </string-array>
+
+</resources>

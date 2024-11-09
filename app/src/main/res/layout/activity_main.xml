@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input fields for name and email -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Dropdown to select the conference topic -->
+    <Spinner
+        android:id="@+id/spinnerTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/conference_topics" />
+
+    <!-- Button to register for the conference -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+    <Button
+        android:id="@+id/web"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="webview">
+
+    </Button>
+
+    <!-- ListView to display the list of registered candidates -->
+    <ListView
+        android:id="@+id/listViewRegistered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:divider="#d3d3d3"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
